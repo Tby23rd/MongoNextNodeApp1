@@ -14,7 +14,6 @@ A simple web application using Next.js with Node and Express to fetch and displa
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -64,17 +63,6 @@ DATABASE_NAME=your_database_name
 ```
 
 **Note**: Ensure you never commit your `.env` file containing sensitive information to any public repository. Add `.env` to your `.gitignore` file to prevent this.
-
-## Usage
-
-1. Once the project is set up and your MongoDB details are correctly added to the `.env` file, navigate to `http://localhost:3000` in your web browser.
-2. You should see the data fetched from MongoDB displayed on tables on the webpage.
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-
 Make sure to replace `your_mongodb_connection_string` and `your_database_name` with your actual MongoDB connection string and database name in the `.env` file.
 If you're using Next.js, and you want to use environment variables for development purposes (i.e., variables that are only available in the development environment), you can use an `.env.local` file.
 
@@ -102,3 +90,13 @@ Replace `your_mongodb_connection_string` and `your_database_name` with the appro
    - Remember that `.env.local` is meant for local development. This means the variables set in this file will only be available during development and will not be included in your production build. If you want to use environment variables in a production setting, you'd typically use a method that aligns with your deployment strategy (e.g., setting environment variables in your hosting platform or container).
 
 Ensure that you never commit sensitive information like API keys, passwords, or any other secrets to version control. Add `.env.local` to your `.gitignore` file to prevent it from being committed to your repository.
+
+
+## Usage
+
+1. Once the project is set up and your MongoDB details are correctly added to the `.env` file, navigate to `http://localhost:3000` in your web browser.
+2. You should see the data fetched from MongoDB displayed on tables on the webpage.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
